@@ -126,8 +126,8 @@ e.MouseButton1Down:connect(
     end
 )
 do
-    if game:GetService("CoreGui"):FindFirstChild("AlchemyHubUI") then
-        game:GetService("CoreGui").AlchemyHubUI:Destroy()
+    if game:GetService("CoreGui"):FindFirstChild("NattaponHubUI") then
+        game:GetService("CoreGui").NattaponHubUI:Destroy()
         game:GetService("CoreGui").ScreenGui:Destroy()
     end
 end
@@ -143,7 +143,7 @@ function a:Window(f, f, f)
     local f = f or Enum.KeyCode.RightControl
     local f = string.gsub(tostring(f), "Enum.KeyCode.", "")
     local f = Instance.new("ScreenGui")
-    f.Name = "AlchemyHubUI"
+    f.Name = "NattaponHubUI"
     f.Parent = game.CoreGui
     f.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     local i = Instance.new("Frame")
